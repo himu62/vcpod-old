@@ -21,6 +21,6 @@ jobs:
       - deploy:
         name: deploy to Github Pages
         command: |
-          if [ "$CIRCLE_BRANCH" == "master" ]; then
-              ./deploy.sh
+          if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            bash .circleci/deploy.sh
           fi
