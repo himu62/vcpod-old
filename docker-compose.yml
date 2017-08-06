@@ -1,0 +1,15 @@
+version: '3'
+services:
+    node:
+        image: node:8-alpine
+        volumes:
+            - .:/vcpod
+        command: sh -c "cd /vcpod && npm install"
+    nginx:
+        image: nginx:alpine
+        volumes:
+            - ./public_html:/usr/share/nginx/html
+        ports:
+            - 8080:80
+        environment:
+            - NGINX_PORT=80

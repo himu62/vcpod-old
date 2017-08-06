@@ -1,0 +1,22 @@
+{
+  "name": "vcpod",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "docker-compose pull && docker-compose up -d",
+    "stop": "docker-compose stop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himu62/vcpod.git"
+  },
+  "keywords": [],
+  "author": "himu62",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/himu62/vcpod/issues"
+  },
+  "homepage": "https://github.com/himu62/vcpod#readme"
+}
