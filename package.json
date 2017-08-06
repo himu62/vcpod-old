@@ -1,12 +1,15 @@
 {
   "name": "vcpod",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "vcpod is vcpod",
+  "main": "scripts/vcpod.tsx",
   "scripts": {
-    "test": "",
     "start": "docker-compose pull && docker-compose up -d",
-    "stop": "docker-compose stop"
+    "stop": "docker-compose stop",
+    "test": "echo not yet",
+    "build": "docker-compose run node /bin/sh -c \"cd /vcpod && ./node_modules/.bin/webpack\"",
+    "watch": "docker-compose run node /bin/sh -c \"cd /vcpod && ./node_modules/.bin/webpack --watch\"",
+    "shell": "docker-compose run node /bin/sh"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/himu62/vcpod/issues"
   },
-  "homepage": "https://github.com/himu62/vcpod#readme"
+  "homepage": "https://github.com/himu62/vcpod#readme",
+  "devDependencies": {
+    "webpack": "^3.4.1"
+  }
 }
