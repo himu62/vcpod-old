@@ -1,5 +1,7 @@
 # vcpod
 
+[![CircleCI](https://circleci.com/gh/himu62/vcpod/tree/master.svg?style=svg)](https://circleci.com/gh/himu62/vcpod/tree/master)
+
 vcpod is vcpod
 
 ## requirements
