@@ -21,7 +21,7 @@ make start
 make build
 ```
 
-then access localhost:8080 with Chrome
+then access http://localhost:8080 with Chrome
 
 ## usage
 
