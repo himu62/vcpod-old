@@ -19,7 +19,8 @@ jobs:
       - run: npm test
       - run: ./node_modules/.bin/webpack
       - deploy:
+        name: deploy to Github Pages
         command: |
-          if [ "$CIRCLE_BRANCH" == "master" ]; then
-            deploy.sh
-          fi
+        if [ "$CIRCLE_BRANCH" == "master" ]; then
+            ./deploy.sh
+        fi
